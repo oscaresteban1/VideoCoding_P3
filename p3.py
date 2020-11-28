@@ -1,5 +1,4 @@
 from os import system, path, remove
-import numpy as np
 
 
 # ex1:
@@ -72,7 +71,7 @@ class container_manager:
 
         command += "-c:v copy -c:a ac3 -c:s mov_text " # elegir codec de audio?
 
-        n_files = np.array([n_video, n_audio, n_subs])
+        n_files = [n_video, n_audio, n_subs]
 
         for i in range(sum(n_files)):
             command += "-map " + str(i) + ":"  + self.map(i, n_files) + ":0 "
