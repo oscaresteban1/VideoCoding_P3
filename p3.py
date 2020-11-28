@@ -1,7 +1,6 @@
 from os import system, path, remove
-import numbers
 import numpy as np
-import subprocess
+
 
 # ex1:
 # we first cut a 1 minute video of BBB
